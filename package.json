@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "this is the backend of ecommerce app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend-install": "cd frontend && npm install",
+    "frontend-build": "cd frontend && npm run build",
+    "heroku-postbuild": "npm run frontend-install && npm run frontend-build"
+  },
+  "keywords": [
+    "express",
+    "node.js"
+  ],
+  "author": "hayat",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "formidable": "^2.0.1",
+    "https": "^1.0.0",
+    "mongoose": "^6.6.0",
+    "nodemon": "^2.0.19",
+    "stripe": "^10.14.0",
+    "uuid": "^9.0.0"
+  }
+}
